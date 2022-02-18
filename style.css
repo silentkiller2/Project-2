@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	
+}
+.bgimg {
+	background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),url(file:///D:/Visual%20Studio%20Code/Code%20Practice/Project%202/pwd1.jpg);
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	
+}
+.container {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 90vh;
+}
+h2 {
+	margin: 10px 0 20px;
+	text-align: center;
+}
+.box {
+	background: #33CC99;
+	padding: 20px;
+	width: 300px;
+}
+
+.result-container {
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	position: relative;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.result-container #result {
+	max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	background: #0066FF;
+	border-radius: 25px;
+}
+
+.btnlarge {
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-size: 15px ;
+    cursor: pointer;
+	background: #0066FF;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.box {
+		font-size: 14px;
+	}
+}
