@@ -34,7 +34,7 @@ length1.oninput = function() {
 	lengthValueSpan.innerHTML = this.value;
 }
 
-generate.addEventListener('click', () => {
+generate1.addEventListener('click', () => {
 	const length = length1.value;
 	const lower1 = lowercase1.checked;
 	const upper1 = uppercase1.checked;
