@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+        <title>Password Generator</title>
     </head>
     <body>
         <div class="bgimg">
@@ -15,23 +16,23 @@
                         </button>
                     </div>
                     <div class="settings">
-                        <div class="setting">
-                            <label>Password length</label>
-                            <input type="number" id="length" min='8' max='20' value='8'>
+                        <div class="settinga">
+                            <label>Password length: <span id="lengthvalue"></span></label>
+                            <input type="range" class="myrange" id="length" min='4' max='80' value='40'>
                         </div>
-                        <div class="setting">
+                        <div class="settingb">
                             <label>Include uppercase letters</label> 
                             <input type="checkbox" id="uppercase" name="chkbox" onclick="chk()" checked>
                         </div>
-                        <div class="setting">
+                        <div class="settingb">
                             <label>Include lowercase letters</label> 
                             <input type="checkbox" id="lowercase" name="chkbox" onclick="chk()" checked>
                         </div>
-                        <div class="setting">
+                        <div class="settingb">
                             <label>Include numbers</label> 
                             <input type="checkbox" id="numbers" name="chkbox" onclick="chk()" checked>
                         </div>
-                        <div class="setting">
+                        <div class="settingb">
                             <label>Include symbols</label> 
                             <input type="checkbox" id="symbols" name="chkbox" onclick="chk()" checked>
                         </div>
