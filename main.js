@@ -35,7 +35,7 @@ length1.oninput = function() {
 }
 
 generate.addEventListener('click', () => {
-	const length = +length1.value;
+	const length = length1.value;
 	const lower1 = lowercase1.checked;
 	const upper1 = uppercase1.checked;
 	const number1 = numbers1.checked;
