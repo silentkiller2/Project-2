@@ -50,7 +50,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 	const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0]);
 	
 	if(typesCount === 0) {
-		return '';
+		return(alert('Check Atleast One Option'));
 	}
 	
 	for(let i=0; i<length; i+=typesCount) {
