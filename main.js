@@ -1,4 +1,5 @@
 const result1 = document.getElementById('result');
+const lengthValueSpan = document.getElementById('lengthvalue');
 const length1 = document.getElementById('length');
 const uppercase1 = document.getElementById('uppercase');
 const lowercase1 = document.getElementById('lowercase');
@@ -28,7 +29,10 @@ clipboard1.addEventListener('click', () => {
 	alert('Password copied to clipboard');
 });
 
-
+lengthValueSpan.innerHTML = length1.value;
+length1.oninput = function() {
+	lengthValueSpan.innerHTML = this.value;
+}
 
 generate.addEventListener('click', () => {
 	const length = +length1.value;
